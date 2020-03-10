@@ -2,7 +2,7 @@
 spring:
   redis:
     host: 10.10.0.94
-    password: 217b352762733568758c83cc49e1c3b8
+    password:
     port: 6379
     database: 2
     pool:
