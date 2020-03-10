@@ -2,7 +2,7 @@
 spring:
   redis:
     host: 10.10.0.94
-    password: 217b352762733568758c83cc49e1c3b8
+    password:
     port: 6379
     database: 2
     pool:
@@ -14,8 +14,8 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://10.10.0.83:3306/yex?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false # 内网服务器
-    username: yex
-    password: 274f8b21fb05caf7f92c1f596e06fyex
+    username: prod
+    password:
     driver-class-name: com.mysql.jdbc.Driver
     sql-script-encoding: utf-8
     initialSize: 5 #初始化大小
@@ -30,6 +30,7 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true #打开PSCache
     maxPoolPreparedStatementPerConnectionSize: 20 #指定每个连接上PSCache的大小
+
 eureka:
   client:
     serviceUrl:
