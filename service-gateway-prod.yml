@@ -30,13 +30,3 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true #打开PSCache
     maxPoolPreparedStatementPerConnectionSize: 20 #指定每个连接上PSCache的大小
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://root:111111@localhost:8761/eureka/
-  instance:
-    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 1
-    lease-expiration-duration-in-seconds: 2
