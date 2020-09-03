@@ -1,9 +1,9 @@
 #开发环境配置文件
 spring:
   datasource:
-    username: test
-    password: hndchtest
-    url: jdbc:mysql://47.107.106.12:3306/trade_system?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 88888888
+    url: jdbc:mysql://localhost:3306/trade_system?characterEncoding=utf8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
